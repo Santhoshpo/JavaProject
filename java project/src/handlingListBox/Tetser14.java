@@ -17,8 +17,8 @@ public class Tetser14 extends BaseSettings
 	{
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://www.naukri.com");
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.get("https://www.naukri.com");		
 		driver.findElement(By.xpath("//div[text()='Login']")).click();
 		driver.findElement(By.xpath("//input[contains(@placeholder,'EmailId')]")).sendKeys("nameishemanth@rediffmail.com");
 		driver.findElement(By.xpath("//input[contains(@placeholder,'password')]")).sendKeys("Testing@123");
