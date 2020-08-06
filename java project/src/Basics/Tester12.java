@@ -15,10 +15,17 @@ public class Tester12 extends BaseSettings
 		Set<String> set  = driver.getWindowHandles();
 		for(String wid:set)
 		{
+			if(driver.getTitle().contains("Job"))
+			{
+				break;
+			}
+			else
+			{
 			driver.switchTo().window(wid);
 			String title=driver.getTitle();
 			System.out.println(title);
 			driver.close();
+			}
 		}
 	}
 		
